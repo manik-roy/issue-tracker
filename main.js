@@ -56,7 +56,6 @@ const fetchIssues = () => {
   issuesList.innerHTML = '';
 
   if(issues) {
-    console.log(issues);
     
     document.getElementById('totalIssue').innerText = issues.length;
     const openIssue = issues.filter(issue => issue.status !== 'Closed').length;
@@ -69,11 +68,11 @@ const fetchIssues = () => {
       issuesList.innerHTML +=   `<div class="well">
                                 <h6>Issue ID: ${id} </h6>
                                 <p><span class="label label-info"> ${status} </span></p>
-                                <h3 class="${status==='Closed' ? 'closed' :''}"> ${description} </h3>
+                                <h3 class="${status==='Closed' ? 'closed' :''} ${severity=="High" ? 'high' :''}"> ${description} </h3>
                                 <p><span class="glyphicon glyphicon-time"></span> ${severity}</p>
                                 <p><span class="glyphicon glyphicon-user"></span> ${assignedTo}</p>
-                                <a href="#" onclick="setStatusClosed(${id})" class="btn btn-warning">Close</a>
-                                <a href="#" onclick="deleteIssue(${id})" class="btn btn-danger">Delete</a>
+                                <button onclick="setStatusClosed(${id})" class="btn btn-warning">Close</button>
+                                <button onclick="deleteIssue(${id})" class="btn btn-danger">Delete</button>
                                 </div>`;
     }
   } 
