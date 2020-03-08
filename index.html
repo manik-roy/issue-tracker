@@ -7,10 +7,23 @@
     <title>Issue Tracker: </title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body onload="fetchIssues()">
     <div class="container">
+
+  <div class="app-header">
+    <div>
       <h1>Issue Tracker: </h1>
+    </div>
+    <div>
+      <h1>Open issue <span id="openIssue">0</span> </h1>
+    </div>
+    <div>
+      <h1>Total issue <span id="totalIssue">0</span> </h1>
+    </div>
+  </div>
+
       <div class="jumbotron">
         <h3>Add New Issue:</h3>
         <form id="issueInputForm">

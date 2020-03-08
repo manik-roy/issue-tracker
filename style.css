@@ -1,0 +1,10 @@
+.app-header {
+  display: flex;
+  justify-content: space-around;
+}
+.closed {
+  text-decoration: line-through;
+}
+.high {
+  color: red;
+}
