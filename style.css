@@ -4,6 +4,7 @@
 }
 .closed {
   text-decoration: line-through;
+  font-weight: 300;
 }
 .high {
   color: red;

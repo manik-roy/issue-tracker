@@ -15,26 +15,23 @@
 
   <div class="app-header">
     <div>
-      <h1>Issue Tracker: </h1>
-    </div>
-    <div>
-      <h1>Open issue <span id="openIssue">0</span> </h1>
-    </div>
-    <div>
-      <h1>Total issue <span id="totalIssue">0</span> </h1>
+      <h1>Issue Tracker:<span id="openIssue"></span>(<span id="totalIssue"></span>) </h1>
     </div>
   </div>
 
       <div class="jumbotron">
         <h3>Add New Issue:</h3>
-        <form id="issueInputForm" class="needs-validation" novalidate>
+        <form id="issueInputForm">
           <div class="form-group">
             <label for="issueDescription">Description</label>
-            <input type="text" class="form-control" id="issueDescription" placeholder="Describe the issue ...">
+            <input type="text" class="form-control" id="issueDescription" placeholder="Describe the issue ..." >
+            <div class="invalid-feedback">
+              Please Describe your issue.
+            </div>
           </div>
           <div class="form-group">
             <label for="issueSeverity">Severity</label>
-            <select id="issueSeverity" class="form-control">
+            <select id="issueSeverity" class="form-control" >
               <option value="Low">Low</option>
               <option value="Medium">Medium</option>
               <option value="High">High</option>
@@ -42,7 +39,10 @@
           </div>
           <div class="form-group">
             <label for="issueAssignedTo">Assigned To</label>
-            <input type="text" class="form-control invalid" id="issueAssignedTo" placeholder="Enter responsible ...">
+            <input type="text" class="form-control invalid" id="issueAssignedTo" placeholder="Enter responsible ..." >
+            <div class="invalid-feedback">
+              Please Assigned your issue a responsible.
+            </div>
           </div>
           <button type="submit" class="btn btn-primary">Add</button>
         </form>
