@@ -101,7 +101,7 @@ const fetchIssues = () => {
                                 <p><span class="glyphicon glyphicon-user"></span> ${assignedTo}</p>
                                 <button onclick="setStatusClosed(${id})" class="btn ${
                 status === 'Closed' ? 'btn-success' : ' btn-warning'
-            }">${status === 'Closed' ? 'Open' : 'Closed'}</button>
+            }">${status === 'Closed' ? 'Open' : 'Close'}</button>
                                 <button onclick="deleteIssue(${id})" class="btn btn-danger">Delete</button>
                                 </div>`;
         }
