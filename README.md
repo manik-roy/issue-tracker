@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://manikroy.netlify.app/">
+  <a href="https://manik-roy.github.io/issue-tracker/">
     <img alt="manikroy" src="https://i.ibb.co/GcNykWw/image.png" width="750px" />
   </a>
 </p>
